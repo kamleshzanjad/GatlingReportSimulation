@@ -1,0 +1,13 @@
+FromPort,ToPort,Airline,Price,FlightNo
+Paris,Rome,Virgin America,472.56,43
+Paris,Rome,United Airlines,432.98,234
+Paris,Rome,Aer Lingus,200.98,9696
+Paris,Rome,Virgin America,765.32,12
+Paris,Rome,Lufthansa,233.98,4346
+Paris,London,Virgin America,472.56,43
+Paris,London,United Airlines,438.98,234
+Boston,New York,Virgin America,472.56,43
+Boston,New York,United Airlines,432.98,234
+Boston,Berlin,Lufthansa,233.98,4346
+
+

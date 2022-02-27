@@ -1,0 +1,55 @@
+15:11:40.661 [TRACE] i.g.a.Gatling$ - Starting
+15:11:40.667 [INFO ] i.g.c.c.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as config file.
+15:11:40.826 [TRACE] i.g.a.Gatling$ - Configuration loaded
+15:11:40.826 [TRACE] i.g.a.Gatling$ - ActorSystem instantiated
+15:11:41.217 [INFO ] a.e.s.Slf4jLogger - Slf4jLogger started
+15:11:41.594 [DEBUG] i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+15:11:41.613 [DEBUG] i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+15:11:41.613 [DEBUG] i.n.u.i.PlatformDependent0 - Java version: 8
+15:11:41.614 [DEBUG] i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+15:11:41.615 [DEBUG] i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+15:11:41.615 [DEBUG] i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+15:11:41.615 [DEBUG] i.n.u.i.PlatformDependent0 - direct buffer constructor: available
+15:11:41.616 [DEBUG] i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+15:11:41.616 [DEBUG] i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+15:11:41.616 [DEBUG] i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+15:11:41.616 [DEBUG] i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+15:11:41.616 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: /var/folders/mw/04l4v9796hnbnq5mv1mhh7h00000gn/T (java.io.tmpdir)
+15:11:41.616 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+15:11:41.616 [DEBUG] i.n.u.i.PlatformDependent - Platform: MacOS
+15:11:41.617 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 7635730432 bytes
+15:11:41.617 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+15:11:41.618 [DEBUG] i.n.u.i.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+15:11:41.618 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+15:11:41.628 [DEBUG] i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+15:11:41.640 [DEBUG] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+15:11:41.641 [DEBUG] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+15:11:41.645 [DEBUG] i.n.c.n.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+15:11:41.645 [DEBUG] i.n.c.n.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+15:11:41.651 [DEBUG] i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+15:11:41.653 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3abada5a
+15:11:41.654 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@c9d0d6
+15:11:41.654 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@6ccdb29f
+15:11:41.654 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3adcc812
+15:11:41.654 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@35432107
+15:11:41.656 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@7b420819
+15:11:41.656 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@7a1a14a4
+15:11:41.656 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@265adfad
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@a3d9978
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@61544ae6
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@4b41dd5c
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3b96c42e
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@5d066c7d
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@1e461e41
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@5ba88be8
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@56928307
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3899782c
+15:11:41.657 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@1603cd68
+15:11:41.658 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@9ebe38b
+15:11:41.658 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@4b23c30a
+15:11:41.658 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@38089a5a
+15:11:41.658 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@30e868be
+15:11:41.658 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@66c92293
+15:11:41.658 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@332796d3
+15:11:41.660 [TRACE] i.g.a.Gatling$ - Runner instantiated
+15:11:41.670 [TRACE] i.g.app.Runner - Running

@@ -1,0 +1,3008 @@
+15:12:55.005 [TRACE] i.g.a.Gatling$ - Starting
+15:12:55.013 [INFO ] i.g.c.c.GatlingConfiguration$ - Gatling will try to use 'gatling.conf' as config file.
+15:12:55.230 [TRACE] i.g.a.Gatling$ - Configuration loaded
+15:12:55.230 [TRACE] i.g.a.Gatling$ - ActorSystem instantiated
+15:12:55.585 [INFO ] a.e.s.Slf4jLogger - Slf4jLogger started
+15:12:55.875 [DEBUG] i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+15:12:55.898 [DEBUG] i.n.u.i.PlatformDependent0 - -Dio.netty.noUnsafe: false
+15:12:55.899 [DEBUG] i.n.u.i.PlatformDependent0 - Java version: 8
+15:12:55.900 [DEBUG] i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+15:12:55.901 [DEBUG] i.n.u.i.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+15:12:55.901 [DEBUG] i.n.u.i.PlatformDependent0 - java.nio.Buffer.address: available
+15:12:55.901 [DEBUG] i.n.u.i.PlatformDependent0 - direct buffer constructor: available
+15:12:55.902 [DEBUG] i.n.u.i.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+15:12:55.902 [DEBUG] i.n.u.i.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+15:12:55.902 [DEBUG] i.n.u.i.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+15:12:55.902 [DEBUG] i.n.u.i.PlatformDependent - sun.misc.Unsafe: available
+15:12:55.903 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.tmpdir: /var/folders/mw/04l4v9796hnbnq5mv1mhh7h00000gn/T (java.io.tmpdir)
+15:12:55.903 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+15:12:55.903 [DEBUG] i.n.u.i.PlatformDependent - Platform: MacOS
+15:12:55.903 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.maxDirectMemory: 7635730432 bytes
+15:12:55.904 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+15:12:55.904 [DEBUG] i.n.u.i.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+15:12:55.904 [DEBUG] i.n.u.i.PlatformDependent - -Dio.netty.noPreferDirect: false
+15:12:55.915 [DEBUG] i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+15:12:55.930 [DEBUG] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+15:12:55.930 [DEBUG] i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+15:12:55.936 [DEBUG] i.n.c.n.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+15:12:55.936 [DEBUG] i.n.c.n.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+15:12:55.943 [DEBUG] i.n.u.i.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+15:12:55.946 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@1458ed9c
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@e383572
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@5ddf0d24
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@363a52f
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@60856961
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@2fd953a6
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@a4add54
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@141e5bef
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@5f9be66c
+15:12:55.947 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3abada5a
+15:12:55.948 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@66c61024
+15:12:55.948 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@61fe30
+15:12:55.950 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@c9d0d6
+15:12:55.950 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@6ccdb29f
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3adcc812
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@35432107
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@7b420819
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@7a1a14a4
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@265adfad
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@a3d9978
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@61544ae6
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@4b41dd5c
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@3b96c42e
+15:12:55.951 [TRACE] i.n.c.n.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.KQueueSelectorImpl@5d066c7d
+15:12:55.954 [TRACE] i.g.a.Gatling$ - Runner instantiated
+15:12:55.965 [TRACE] i.g.app.Runner - Running
+15:13:00.627 [TRACE] i.g.app.Runner - Simulation instantiated
+15:13:00.634 [TRACE] i.g.app.Runner - Simulation params built
+15:13:00.634 [TRACE] i.g.app.Runner - Before hooks executed
+15:13:00.659 [TRACE] i.g.app.Runner - CoreComponents instantiated
+15:13:00.669 [DEBUG] i.n.u.i.NativeLibraryLoader - -Dio.netty.native.workdir: /var/folders/mw/04l4v9796hnbnq5mv1mhh7h00000gn/T (io.netty.tmpdir)
+15:13:00.669 [DEBUG] i.n.u.i.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+15:13:00.669 [DEBUG] i.n.u.i.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+15:13:00.782 [DEBUG] i.n.u.i.NativeLibraryLoader - Successfully loaded the library /var/folders/mw/04l4v9796hnbnq5mv1mhh7h00000gn/T/libnetty_tcnative_osx_x86_645091198253351114480.dylib
+15:13:00.782 [DEBUG] i.n.h.s.OpenSsl - Initialize netty-tcnative using engine: 'default'
+15:13:00.782 [DEBUG] i.n.h.s.OpenSsl - netty-tcnative using native library: BoringSSL
+15:13:00.798 [DEBUG] i.n.u.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+15:13:00.798 [DEBUG] i.n.u.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+15:13:00.802 [DEBUG] i.n.b.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+15:13:00.802 [DEBUG] i.n.b.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+15:13:00.803 [DEBUG] i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7894f09b
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+15:13:00.810 [DEBUG] i.n.b.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+15:13:00.825 [DEBUG] i.n.b.ByteBufUtil - -Dio.netty.allocator.type: pooled
+15:13:00.825 [DEBUG] i.n.b.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+15:13:00.825 [DEBUG] i.n.b.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+15:13:00.827 [DEBUG] i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@62435e70
+15:13:00.832 [DEBUG] i.n.u.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+15:13:00.832 [DEBUG] i.n.u.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+15:13:00.832 [DEBUG] i.n.u.Recycler - -Dio.netty.recycler.linkCapacity: 16
+15:13:00.832 [DEBUG] i.n.u.Recycler - -Dio.netty.recycler.ratio: 8
+15:13:00.832 [DEBUG] i.n.u.Recycler - -Dio.netty.recycler.delayedQueue.ratio: 8
+15:13:00.841 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+15:13:00.841 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 => ECDHE-ECDSA-AES128-GCM-SHA256
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_GCM_SHA256 => ECDHE-RSA-AES128-GCM-SHA256
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 => ECDHE-ECDSA-AES256-GCM-SHA384
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_GCM_SHA384 => ECDHE-RSA-AES256-GCM-SHA384
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-ECDSA-CHACHA20-POLY1305
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-RSA-CHACHA20-POLY1305
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256 => ECDHE-PSK-CHACHA20-POLY1305
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_128_CBC_SHA => ECDHE-ECDSA-AES128-SHA
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+15:13:00.842 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_128_CBC_SHA => ECDHE-RSA-AES128-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_128_CBC_SHA => ECDHE-PSK-AES128-CBC-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_ECDSA_WITH_AES_256_CBC_SHA => ECDHE-ECDSA-AES256-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_RSA_WITH_AES_256_CBC_SHA => ECDHE-RSA-AES256-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_ECDHE_PSK_WITH_AES_256_CBC_SHA => ECDHE-PSK-AES256-CBC-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_GCM_SHA256 => AES128-GCM-SHA256
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_GCM_SHA384 => AES256-GCM-SHA384
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_128_CBC_SHA => AES128-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_128_CBC_SHA => PSK-AES128-CBC-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+15:13:00.843 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_AES_256_CBC_SHA => AES256-SHA
+15:13:00.844 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+15:13:00.844 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_PSK_WITH_AES_256_CBC_SHA => PSK-AES256-CBC-SHA
+15:13:00.844 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: TLS_RSA_WITH_3DES_EDE_CBC_SHA => DES-CBC3-SHA
+15:13:00.844 [DEBUG] i.n.h.s.CipherSuiteConverter - Cipher suite mapping: SSL_RSA_WITH_3DES_EDE_CBC_SHA => DES-CBC3-SHA
+15:13:00.844 [DEBUG] i.n.h.s.OpenSsl - Supported protocols (OpenSSL): [SSLv2Hello, TLSv1, TLSv1.1, TLSv1.2, TLSv1.3] 
+15:13:00.844 [DEBUG] i.n.h.s.OpenSsl - Default cipher suites (OpenSSL): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+15:13:00.897 [DEBUG] i.g.h.e.HttpEngine - Start warm up
+15:13:01.035 [DEBUG] i.n.c.DefaultChannelId - -Dio.netty.processId: 97398 (auto-detected)
+15:13:01.037 [DEBUG] i.n.u.NetUtil - -Djava.net.preferIPv4Stack: false
+15:13:01.037 [DEBUG] i.n.u.NetUtil - -Djava.net.preferIPv6Addresses: false
+15:13:01.040 [DEBUG] i.n.u.NetUtilInitializations - Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+15:13:01.040 [DEBUG] i.n.u.NetUtil - Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+15:13:01.042 [DEBUG] i.n.c.DefaultChannelId - -Dio.netty.machineId: ac:de:48:ff:fe:00:11:22 (auto-detected)
+15:13:01.239 [DEBUG] i.g.h.c.i.DefaultHttpClient - Installing SslHandler for https://gatling.io
+15:13:01.248 [DEBUG] i.n.u.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@70754a39
+15:13:01.422 [DEBUG] i.n.h.s.u.InsecureTrustManagerFactory - Accepting a server certificate: CN=gatling.io
+15:13:01.423 [DEBUG] i.g.h.c.i.DefaultHttpClient - TLS handshake successful: protocol=TLSv1.3 cipher suite=TLS_AES_256_GCM_SHA384
+15:13:01.429 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+accept-language: en-US,en;q=0.5
+accept-encoding: gzip
+connection: close
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0
+host: gatling.io, content=null}
+15:13:01.446 [DEBUG] i.n.h.s.SslHandler - [id: 0xbb25d581, L:/192.168.1.6:55469 - R:gatling.io/13.36.213.18:443] HANDSHAKEN: protocol:TLSv1.3 cipher suite:TLS_AES_256_GCM_SHA384
+15:13:01.724 [DEBUG] i.n.h.c.c.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+15:13:01.724 [DEBUG] i.n.h.c.c.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+15:13:01.735 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 17 Feb 2022 09:43:01 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Vary: Accept-Encoding
+X-Powered-By: PHP/7.4.21
+Set-Cookie: ppwp_wp_session=7640d00e9ea07b6aaf08b9963852d5f1%7C%7C1645092711%7C%7C1645092351; expires=Thu, 17-Feb-2022 10:11:51 GMT; Max-Age=1800; path=/
+Link: <https://gatling.io/wp-json/>; rel="https://api.w.org/"
+Link: <https://gatling.io/wp-json/wp/v2/pages/82>; rel="alternate"; type="application/json"
+Link: <https://gatling.io/>; rel=shortlink
+X-Cache: HIT
+content-encoding: gzip'
+15:13:01.740 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledUnsafeHeapByteBuf(ridx: 0, widx: 68644, cap: 131072), decoderResult: success)'
+15:13:01.740 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledUnsafeHeapByteBuf(ridx: 0, widx: 68284, cap: 131072), decoderResult: success)'
+15:13:01.741 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledUnsafeHeapByteBuf(ridx: 0, widx: 38612, cap: 65536), decoderResult: success)'
+15:13:01.743 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:01.746 [DEBUG] i.g.h.e.HttpEngine - Warm up request https://gatling.io successful
+15:13:01.747 [DEBUG] i.g.h.e.HttpEngine - Warm up done
+15:13:01.851 [DEBUG] i.g.h.c.Http2PriorKnowledgeSupport$ - HTTP/2 disabled
+15:13:01.853 [TRACE] i.g.app.Runner - Asking Controller to start
+15:13:01.858 [INFO ] i.g.c.s.w.LogFileDataWriter - Initializing
+15:13:01.859 [INFO ] i.g.c.s.w.ConsoleDataWriter - Initializing
+15:13:01.866 [INFO ] i.g.c.s.w.LogFileDataWriter - Initialized
+15:13:01.870 [INFO ] i.g.c.s.w.ConsoleDataWriter - Initialized
+15:13:01.881 [TRACE] i.g.c.c.i.o.OpenWorkload - Injecting 1 users in scenario DemoStore, continue=false
+15:13:01.882 [INFO ] i.g.c.c.i.Injector - Scenario DemoStore has finished injecting
+15:13:01.883 [INFO ] i.g.c.c.i.Injector - Injecting is done
+15:13:01.901 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_0:GET_http://demostore.gatling.io/ uri=http://demostore.gatling.io/: scenario=DemoStore, userId=1
+15:13:01.908 [DEBUG] i.g.c.c.i.o.OpenWorkload - Start user #1
+15:13:02.917 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET / HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+host: demostore.gatling.io, content=null}
+15:13:05.048 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:03 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Set-Cookie: JSESSIONID=5846058FEA7403125DC963055BB24246; Path=/; HttpOnly
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:05.049 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1505, cap: 1505/1505, unwrapped: PooledUnsafeDirectByteBuf(ridx: 2048, widx: 2048, cap: 2048)), decoderResult: success)'
+15:13:05.050 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 2108, cap: 2108/2108, unwrapped: PooledUnsafeDirectByteBuf(ridx: 2110, widx: 2580, cap: 32768)), decoderResult: success)'
+15:13:05.050 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 458, cap: 458/458, unwrapped: PooledUnsafeDirectByteBuf(ridx: 2575, widx: 2580, cap: 32768)), decoderResult: success)'
+15:13:05.050 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:05.077 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_0:GET_http://demostore.gatling.io/: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	host: demostore.gatling.io
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:03 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	Set-Cookie: JSESSIONID=5846058FEA7403125DC963055BB24246; Path=/; HttpOnly
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta id="_csrf" name="_csrf" content="fae02617-ffc2-4162-b233-daa4677d36c9" />
+  <meta
+    id="_csrf_header"
+    name="_csrf_header"
+    content="X-CSRF-TOKEN"
+  />
+
+  <title>Gatling Demo-Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+  <body>
+    <nav
+  class="navbar navbar-expand-md navbar-dark bg-dark"
+>
+  <a class="navbar-brand" href="/">Gatling Demo-Store</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/about-us"
+        >About us</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/contact"
+        >Contact</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/rest-api"
+        >API</a>
+      </li>
+    </ul>
+
+    <ul class="float-right navbar-nav">
+      <li class="nav-item active">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item active">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+  <h3 class="display-4">Categories</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/category/all" class="nav-link">All Products</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-him"
+      >For Him</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-her"
+      >For Her</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/unisex"
+      >Unisex</a>
+    </li>
+  </ul>
+
+  <div
+  class="bg-dark text-white p-3 mt-3"
+>
+  
+  <div class="cart cartInactive">
+    <p>Your cart is empty.</p>
+  </div>
+</div>
+
+</div>
+
+        <div class="col"></div>
+        <div class="col-7"><h2>Welcome to the Gatling DemoStore!</h2><p>&nbsp;</p><p>This is a fictional / dummy eCommerce store that sells eyeglass cases.</p><p>Since this is a sandbox solution, no actual sales transactions are completed on this site.</p><p>&nbsp;</p><p>You can login with the user admin (password <code>admin</code>) or users john, user1, user2 and user3 (password <code>pass</code>)</p><p>&nbsp;</p><h3><strong>&lt; Select a category from the left-hand menu</strong></h3><p>&nbsp;</p><p>The purpose of this store is to teach the creation of test scripts with the <a href="https://gatling.io">Gatling</a> load testing tool.</p><p>To find out more, check out the <a href="https://gatling.io/academy/">Gatling Academy</a></p></div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  <script src="/js/app.js"></script>
+</footer>
+
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:05.144 [DEBUG] i.g.c.a.Pause - Pausing for 2000ms
+15:13:07.153 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_1:GET_http://demostore.gatling.io/about-us uri=http://demostore.gatling.io/about-us: scenario=DemoStore, userId=1
+15:13:07.153 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /about-us HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:07.437 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:07 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:07.438 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3604, cap: 3604/3604, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4074, widx: 4079, cap: 32768)), decoderResult: success)'
+15:13:07.438 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:07.441 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_1:GET_http://demostore.gatling.io/about-us: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/about-us, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/about-us
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:07 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta id="_csrf" name="_csrf" content="fae02617-ffc2-4162-b233-daa4677d36c9" />
+  <meta
+    id="_csrf_header"
+    name="_csrf_header"
+    content="X-CSRF-TOKEN"
+  />
+
+  <title>Gatling Demo-Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+  <body>
+    <nav
+  class="navbar navbar-expand-md navbar-dark bg-dark"
+>
+  <a class="navbar-brand" href="/">Gatling Demo-Store</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/about-us"
+        >About us</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/contact"
+        >Contact</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/rest-api"
+        >API</a>
+      </li>
+    </ul>
+
+    <ul class="float-right navbar-nav">
+      <li class="nav-item active">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item active">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+  <h3 class="display-4">Categories</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/category/all" class="nav-link">All Products</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-him"
+      >For Him</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-her"
+      >For Her</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/unisex"
+      >Unisex</a>
+    </li>
+  </ul>
+
+  <div
+  class="bg-dark text-white p-3 mt-3"
+>
+  
+  <div class="cart cartInactive">
+    <p>Your cart is empty.</p>
+  </div>
+</div>
+
+</div>
+
+        <div class="col"></div>
+        <div class="col-7"><h2>About Us</h2><p>&nbsp;</p><p>This is a fictional / dummy eCommerce store that sells eyeglass cases.</p><p>The purpose of this site is to teach the creation of test scripts with the <a href="https://gatling.io">Gatling</a> load testing tool.</p></div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  <script src="/js/app.js"></script>
+</footer>
+
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:07.444 [DEBUG] i.g.c.a.Pause - Pausing for 2000ms
+15:13:09.449 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_2:GET_http://demostore.gatling.io/contact uri=http://demostore.gatling.io/contact: scenario=DemoStore, userId=1
+15:13:09.450 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /contact HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/about-us
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:10.998 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:09 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:10.999 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3688, cap: 3688/3688, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4158, widx: 4183, cap: 16384)), decoderResult: success)'
+15:13:10.999 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 15, cap: 15/15, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4178, widx: 4183, cap: 16384)), decoderResult: success)'
+15:13:10.999 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:11.000 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_2:GET_http://demostore.gatling.io/contact: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/contact, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/contact
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/about-us
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:09 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta id="_csrf" name="_csrf" content="fae02617-ffc2-4162-b233-daa4677d36c9" />
+  <meta
+    id="_csrf_header"
+    name="_csrf_header"
+    content="X-CSRF-TOKEN"
+  />
+
+  <title>Gatling Demo-Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+  <body>
+    <nav
+  class="navbar navbar-expand-md navbar-dark bg-dark"
+>
+  <a class="navbar-brand" href="/">Gatling Demo-Store</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/about-us"
+        >About us</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/contact"
+        >Contact</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/rest-api"
+        >API</a>
+      </li>
+    </ul>
+
+    <ul class="float-right navbar-nav">
+      <li class="nav-item active">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item active">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+  <h3 class="display-4">Categories</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/category/all" class="nav-link">All Products</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-him"
+      >For Him</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-her"
+      >For Her</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/unisex"
+      >Unisex</a>
+    </li>
+  </ul>
+
+  <div
+  class="bg-dark text-white p-3 mt-3"
+>
+  
+  <div class="cart cartInactive">
+    <p>Your cart is empty.</p>
+  </div>
+</div>
+
+</div>
+
+        <div class="col"></div>
+        <div class="col-7"><h2>Contact Us</h2><p>&nbsp;</p><p>To learn how this site can help teach you the creation of load testing scripts, check out the <a href="https://gatling.io/academy/">Gatling Academy</a>.</p><p>If you need to contact the Gatling team directly, check the <a href="https://gatling.io/company/contact/">Contact Us</a> page on the Gatling website.</p></div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  <script src="/js/app.js"></script>
+</footer>
+
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:11.002 [DEBUG] i.g.c.a.Pause - Pausing for 2000ms
+15:13:13.006 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_3:GET_http://demostore.gatling.io/category/all uri=http://demostore.gatling.io/category/all: scenario=DemoStore, userId=1
+15:13:13.007 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /category/all HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/contact
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:16.213 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:13 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:16.214 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 7784, cap: 7784/7784, unwrapped: PooledUnsafeDirectByteBuf(ridx: 8255, widx: 8255, cap: 16384)), decoderResult: success)'
+15:13:16.214 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4096, cap: 4096/4096, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4104, widx: 4608, cap: 16384)), decoderResult: success)'
+15:13:16.214 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 492, cap: 492/492, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4603, widx: 4608, cap: 16384)), decoderResult: success)'
+15:13:16.214 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:16.215 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_3:GET_http://demostore.gatling.io/category/all: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/category/all, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/category/all
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/contact
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:13 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta id="_csrf" name="_csrf" content="fae02617-ffc2-4162-b233-daa4677d36c9" />
+  <meta
+    id="_csrf_header"
+    name="_csrf_header"
+    content="X-CSRF-TOKEN"
+  />
+
+  <title>Gatling Demo-Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+  <body>
+    <nav
+  class="navbar navbar-expand-md navbar-dark bg-dark"
+>
+  <a class="navbar-brand" href="/">Gatling Demo-Store</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/about-us"
+        >About us</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/contact"
+        >Contact</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/rest-api"
+        >API</a>
+      </li>
+    </ul>
+
+    <ul class="float-right navbar-nav">
+      <li class="nav-item active">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item active">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+  <h3 class="display-4">Categories</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/category/all" class="nav-link">All Products</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-him"
+      >For Him</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-her"
+      >For Her</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/unisex"
+      >Unisex</a>
+    </li>
+  </ul>
+
+  <div
+  class="bg-dark text-white p-3 mt-3"
+>
+  
+  <div class="cart cartInactive">
+    <p>Your cart is empty.</p>
+  </div>
+</div>
+
+</div>
+
+        <div class="col"></div>
+        <div class="col-8">
+          <h2
+            class="display-3 mb-5"
+            id="CategoryName"
+          >All Products</h2>
+
+          <div class="row">
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/casual-black-blue"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/casual-blackblue-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/casual-black-blue"
+                class="link-unstyled"
+                ><h4>Casual Black-Blue</h4
+              ></a>
+              <div class="desc"><p>Some casual black &amp; blue glasses</p></div>
+              <p>$24.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/17" data-id="17"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/black-and-red-glasses"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/casual-blackred-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/black-and-red-glasses"
+                class="link-unstyled"
+                ><h4>Black and Red Glasses</h4
+              ></a>
+              <div class="desc"><p>A Black &amp; Red glasses case</p></div>
+              <p>$18.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/19" data-id="19"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/bright-yellow-glasses"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/casual-blue-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/bright-yellow-glasses"
+                class="link-unstyled"
+                ><h4>Bright Yellow Glasses</h4
+              ></a>
+              <div class="desc"><p>A glasses case that is bright yellow</p></div>
+              <p>$17.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/20" data-id="20"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/casual-brown-glasses"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/casual-brown-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/casual-brown-glasses"
+                class="link-unstyled"
+                ><h4>Casual Brown Glasses</h4
+              ></a>
+              <div class="desc"><p>A vintage glasses case in casual brown</p></div>
+              <p>$13.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/21" data-id="21"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/deepest-blue"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/casual-darkblue-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/deepest-blue"
+                class="link-unstyled"
+                ><h4>Deepest Blue</h4
+              ></a>
+              <div class="desc"><p>Glasses case with a deep blue design</p></div>
+              <p>$29.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/22" data-id="22"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/light-blue-glasses"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/casual-lightblue-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/light-blue-glasses"
+                class="link-unstyled"
+                ><h4>Light Blue Glasses</h4
+              ></a>
+              <div class="desc"><p>A glasses case in light blue</p></div>
+              <p>$17.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/23" data-id="23"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="mt-3">
+            <ul class="pagination">
+              
+
+              <li
+                class="page-item active"
+              >
+                <a
+                  href="/category/all?page=0"
+                  class="page-link"
+                >1</a>
+              </li>
+
+              <li
+                class="page-item"
+              >
+                <a
+                  href="/category/all?page=1"
+                  class="page-link"
+                >2</a>
+              </li>
+
+              <li
+                class="page-item"
+              >
+                <a
+                  href="/category/all?page=2"
+                  class="page-link"
+                >3</a>
+              </li>
+
+              <li
+                class="page-item"
+              >
+                <a
+                  href="/category/all?page=3"
+                  class="page-link"
+                >4</a>
+              </li>
+
+              <li class="page-item">
+                <a
+                  href="/category/all?page=1"
+                  class="page-link"
+                  >Next</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  <script src="/js/app.js"></script>
+</footer>
+
+
+    <script>
+      $('a.addToCart').click(function (e) {
+        e.preventDefault()
+
+        let $this = $(this)
+
+        $this.next().removeClass('d-none')
+
+        let id = $this.attr('data-id')
+        let url = '/cart/add/' + id
+
+        $.get(url, {}, function (data) {
+          $('div.cart').html(data)
+        }).done(function () {
+          $this.parent().parent().find('div.productAdded').fadeIn()
+          $this.next().addClass('d-none')
+          setTimeout(() => {
+            $this.parent().parent().find('div.productAdded').fadeOut()
+          }, 1300)
+        })
+      })
+    </script>
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:16.223 [DEBUG] i.g.c.a.Pause - Pausing for 3000ms
+15:13:19.225 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_4:GET_http://demostore.gatling.io/product/casual-black-blue uri=http://demostore.gatling.io/product/casual-black-blue: scenario=DemoStore, userId=1
+15:13:19.226 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /product/casual-black-blue HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/category/all
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:21.870 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:19 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:21.870 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3688, cap: 3688/3688, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4158, widx: 5400, cap: 8192)), decoderResult: success)'
+15:13:21.870 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1230, cap: 1230/1230, unwrapped: PooledUnsafeDirectByteBuf(ridx: 5395, widx: 5400, cap: 8192)), decoderResult: success)'
+15:13:21.870 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:21.871 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_4:GET_http://demostore.gatling.io/product/casual-black-blue: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/product/casual-black-blue, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/product/casual-black-blue
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/category/all
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:19 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta id="_csrf" name="_csrf" content="fae02617-ffc2-4162-b233-daa4677d36c9" />
+  <meta
+    id="_csrf_header"
+    name="_csrf_header"
+    content="X-CSRF-TOKEN"
+  />
+
+  <title>Gatling Demo-Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+  <body>
+    <nav
+  class="navbar navbar-expand-md navbar-dark bg-dark"
+>
+  <a class="navbar-brand" href="/">Gatling Demo-Store</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/about-us"
+        >About us</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/contact"
+        >Contact</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/rest-api"
+        >API</a>
+      </li>
+    </ul>
+
+    <ul class="float-right navbar-nav">
+      <li class="nav-item active">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item active">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+  <h3 class="display-4">Categories</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/category/all" class="nav-link">All Products</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-him"
+      >For Him</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-her"
+      >For Her</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/unisex"
+      >Unisex</a>
+    </li>
+  </ul>
+
+  <div
+  class="bg-dark text-white p-3 mt-3"
+>
+  
+  <div class="cart cartInactive">
+    <p>Your cart is empty.</p>
+  </div>
+</div>
+
+</div>
+
+        <div class="col"></div>
+        <div class="col-8">
+          <h2
+            class="display-3 mb-5"
+          >Casual Black-Blue</h2>
+          <div class="row" id="ProductDescription"><p>Some casual black &amp; blue glasses</p></div>
+          <div class="row">
+            <img
+              style="width: 300px"
+              src="/media/casual-blackblue-open.jpg"
+              alt=""
+            />
+          </div>
+          <div class="row">Price: $24.99</div>
+          <div class="row mt-3">
+            <div style="position: relative">
+              <p>
+                <a
+                  class="btn btn-primary addToCart"
+                  href="/cart/add/17" data-id="17"
+                  >Add to cart</a
+                >
+                <img class="ajaxLoader d-none" src="/images/ajax-loader.gif" />
+              </p>
+              <div class="btn btn-sm btn-success productAdded hide ml-2">
+                Product Added!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  <script src="/js/app.js"></script>
+</footer>
+
+
+    <script>
+      $('a.addToCart').click(function (e) {
+        e.preventDefault()
+
+        let $this = $(this)
+
+        $this.next().removeClass('d-none')
+
+        let id = $this.attr('data-id')
+        let url = '/cart/add/' + id
+
+        $.get(url, {}, function (data) {
+          $('div.cart').html(data)
+        }).done(function () {
+          $this.parent().parent().find('div.productAdded').fadeIn()
+          $this.next().addClass('d-none')
+          setTimeout(() => {
+            $this.parent().parent().find('div.productAdded').fadeOut()
+          }, 1300)
+        })
+      })
+    </script>
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:21.873 [DEBUG] i.g.c.a.Pause - Pausing for 2000ms
+15:13:23.879 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_5:GET_http://demostore.gatling.io/cart/add/17 uri=http://demostore.gatling.io/cart/add/17: scenario=DemoStore, userId=1
+15:13:23.880 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /cart/add/17 HTTP/1.1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: */*
+X-Requested-With: XMLHttpRequest
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/product/casual-black-blue
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:25.702 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:24 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:25.702 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 259, cap: 259/259, unwrapped: PooledUnsafeDirectByteBuf(ridx: 729, widx: 734, cap: 8192)), decoderResult: success)'
+15:13:25.702 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:25.703 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_5:GET_http://demostore.gatling.io/cart/add/17: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/product/casual-black-blue, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/cart/add/17
+headers:
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: */*
+	X-Requested-With: XMLHttpRequest
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/product/casual-black-blue
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:24 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<p>You have <span>1</span> items in your cart.</p>
+<p>
+  Total
+  <span
+  >$24.99</span>
+  items in your cart.
+</p>
+<p>
+  <a href="/cart/view" class="btn btn-success">View cart</a>
+  <a href="/cart/clear" class="btn btn-danger float-right">Clear cart</a>
+</p>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:25.704 [DEBUG] i.g.c.a.Pause - Pausing for 4000ms
+15:13:29.707 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_6:GET_http://demostore.gatling.io/category/for-her uri=http://demostore.gatling.io/category/for-her: scenario=DemoStore, userId=1
+15:13:29.707 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /category/for-her HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/product/casual-black-blue
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:33.470 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:30 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:33.471 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 7723, cap: 7723/7723, unwrapped: PooledUnsafeDirectByteBuf(ridx: 8192, widx: 8192, cap: 8192)), decoderResult: success)'
+15:13:33.471 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 61, cap: 61/61, unwrapped: PooledUnsafeDirectByteBuf(ridx: 63, widx: 4447, cap: 65536)), decoderResult: success)'
+15:13:33.471 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 4096, cap: 4096/4096, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4167, widx: 4447, cap: 65536)), decoderResult: success)'
+15:13:33.471 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 268, cap: 268/268, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4442, widx: 4447, cap: 65536)), decoderResult: success)'
+15:13:33.472 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:33.473 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_6:GET_http://demostore.gatling.io/category/for-her: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/category/for-her, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/category/for-her
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/product/casual-black-blue
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:30 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta id="_csrf" name="_csrf" content="fae02617-ffc2-4162-b233-daa4677d36c9" />
+  <meta
+    id="_csrf_header"
+    name="_csrf_header"
+    content="X-CSRF-TOKEN"
+  />
+
+  <title>Gatling Demo-Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+  <body>
+    <nav
+  class="navbar navbar-expand-md navbar-dark bg-dark"
+>
+  <a class="navbar-brand" href="/">Gatling Demo-Store</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/about-us"
+        >About us</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/contact"
+        >Contact</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/rest-api"
+        >API</a>
+      </li>
+    </ul>
+
+    <ul class="float-right navbar-nav">
+      <li class="nav-item active">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item active">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+  <h3 class="display-4">Categories</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/category/all" class="nav-link">All Products</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-him"
+      >For Him</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-her"
+      >For Her</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/unisex"
+      >Unisex</a>
+    </li>
+  </ul>
+
+  <div
+  class="bg-dark text-white p-3 mt-3"
+>
+  <div class="cart cartActive">
+    <p>You have <span>1</span> items in your cart.</p>
+    <p>
+      Total
+      <span
+      >$24.99</span>
+      items in your cart.
+    </p>
+    <p>
+      <a href="/cart/view" class="btn btn-success">View cart</a>
+      <a href="/cart/clear" class="btn btn-danger float-right">Clear cart</a>
+    </p>
+  </div>
+  
+</div>
+
+</div>
+
+        <div class="col"></div>
+        <div class="col-8">
+          <h2
+            class="display-3 mb-5"
+            id="CategoryName"
+          >For Her</h2>
+
+          <div class="row">
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/perfect-pink"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/casual-pink-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/perfect-pink"
+                class="link-unstyled"
+                ><h4>Perfect Pink</h4
+              ></a>
+              <div class="desc"><p>Perfectly pink glasses case</p></div>
+              <p>$19.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/26" data-id="26"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/curved-black"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/curve-black-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/curved-black"
+                class="link-unstyled"
+                ><h4>Curved Black</h4
+              ></a>
+              <div class="desc"><p>A lovely design with a curved black case</p></div>
+              <p>$12.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/27" data-id="27"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/black-grey-curved"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/curve-blackgrey-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/black-grey-curved"
+                class="link-unstyled"
+                ><h4>Black Grey Curved</h4
+              ></a>
+              <div class="desc"><p>Glasses case with a black grey curved design</p></div>
+              <p>$14.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/28" data-id="28"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/black-light-blue"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/curve-blacklightblue-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/black-light-blue"
+                class="link-unstyled"
+                ><h4>Black Light Blue</h4
+              ></a>
+              <div class="desc"><p>Case with an ocean blue design on black</p></div>
+              <p>$23.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/29" data-id="29"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/curved-pink"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/curve-blackpink-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/curved-pink"
+                class="link-unstyled"
+                ><h4>Curved Pink</h4
+              ></a>
+              <div class="desc"><p>Curved pink glasses case</p></div>
+              <p>$16.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/30" data-id="30"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <p>
+                <a
+                  href="/product/velvet-red"
+                  class="link-unstyled"
+                  ><img
+                    style="width: 200px"
+                    src="/media/curve-blackred-open.jpg"
+                /></a>
+              </p>
+              <a
+                href="/product/velvet-red"
+                class="link-unstyled"
+                ><h4>Velvet Red</h4
+              ></a>
+              <div class="desc"><p>Beautiful glasses case with a curved red design</p></div>
+              <p>$18.99</p>
+              <div style="position: relative">
+                <p>
+                  <a
+                    class="btn btn-primary addToCart"
+                    href="/cart/add/31" data-id="31"
+                    >Add to cart</a
+                  >
+                  <img
+                    class="ajaxLoader d-none"
+                    src="/images/ajax-loader.gif"
+                  />
+                </p>
+                <div class="btn btn-sm btn-success productAdded hide">
+                  Product Added!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="mt-3">
+            <ul class="pagination">
+              
+
+              <li
+                class="page-item active"
+              >
+                <a
+                  href="/category/for-her?page=0"
+                  class="page-link"
+                >1</a>
+              </li>
+
+              <li
+                class="page-item"
+              >
+                <a
+                  href="/category/for-her?page=1"
+                  class="page-link"
+                >2</a>
+              </li>
+
+              <li class="page-item">
+                <a
+                  href="/category/for-her?page=1"
+                  class="page-link"
+                  >Next</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  <script src="/js/app.js"></script>
+</footer>
+
+
+    <script>
+      $('a.addToCart').click(function (e) {
+        e.preventDefault()
+
+        let $this = $(this)
+
+        $this.next().removeClass('d-none')
+
+        let id = $this.attr('data-id')
+        let url = '/cart/add/' + id
+
+        $.get(url, {}, function (data) {
+          $('div.cart').html(data)
+        }).done(function () {
+          $this.parent().parent().find('div.productAdded').fadeIn()
+          $this.next().addClass('d-none')
+          setTimeout(() => {
+            $this.parent().parent().find('div.productAdded').fadeOut()
+          }, 1300)
+        })
+      })
+    </script>
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:33.475 [DEBUG] i.g.c.a.Pause - Pausing for 8000ms
+15:13:41.480 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_7:GET_http://demostore.gatling.io/product/perfect-pink uri=http://demostore.gatling.io/product/perfect-pink: scenario=DemoStore, userId=1
+15:13:41.481 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /product/perfect-pink HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/category/for-her
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:42.159 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:41 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:42.159 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3688, cap: 3688/3688, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4158, widx: 5651, cap: 65536)), decoderResult: success)'
+15:13:42.159 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1481, cap: 1481/1481, unwrapped: PooledUnsafeDirectByteBuf(ridx: 5646, widx: 5651, cap: 65536)), decoderResult: success)'
+15:13:42.159 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:42.160 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_7:GET_http://demostore.gatling.io/product/perfect-pink: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/product/perfect-pink, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/product/perfect-pink
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/category/for-her
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:41 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta id="_csrf" name="_csrf" content="fae02617-ffc2-4162-b233-daa4677d36c9" />
+  <meta
+    id="_csrf_header"
+    name="_csrf_header"
+    content="X-CSRF-TOKEN"
+  />
+
+  <title>Gatling Demo-Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+  <body>
+    <nav
+  class="navbar navbar-expand-md navbar-dark bg-dark"
+>
+  <a class="navbar-brand" href="/">Gatling Demo-Store</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/about-us"
+        >About us</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/contact"
+        >Contact</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/rest-api"
+        >API</a>
+      </li>
+    </ul>
+
+    <ul class="float-right navbar-nav">
+      <li class="nav-item active">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item active">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+  <h3 class="display-4">Categories</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/category/all" class="nav-link">All Products</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-him"
+      >For Him</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-her"
+      >For Her</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/unisex"
+      >Unisex</a>
+    </li>
+  </ul>
+
+  <div
+  class="bg-dark text-white p-3 mt-3"
+>
+  <div class="cart cartActive">
+    <p>You have <span>1</span> items in your cart.</p>
+    <p>
+      Total
+      <span
+      >$24.99</span>
+      items in your cart.
+    </p>
+    <p>
+      <a href="/cart/view" class="btn btn-success">View cart</a>
+      <a href="/cart/clear" class="btn btn-danger float-right">Clear cart</a>
+    </p>
+  </div>
+  
+</div>
+
+</div>
+
+        <div class="col"></div>
+        <div class="col-8">
+          <h2
+            class="display-3 mb-5"
+          >Perfect Pink</h2>
+          <div class="row" id="ProductDescription"><p>Perfectly pink glasses case</p></div>
+          <div class="row">
+            <img
+              style="width: 300px"
+              src="/media/casual-pink-open.jpg"
+              alt=""
+            />
+          </div>
+          <div class="row">Price: $19.99</div>
+          <div class="row mt-3">
+            <div style="position: relative">
+              <p>
+                <a
+                  class="btn btn-primary addToCart"
+                  href="/cart/add/26" data-id="26"
+                  >Add to cart</a
+                >
+                <img class="ajaxLoader d-none" src="/images/ajax-loader.gif" />
+              </p>
+              <div class="btn btn-sm btn-success productAdded hide ml-2">
+                Product Added!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  <script src="/js/app.js"></script>
+</footer>
+
+
+    <script>
+      $('a.addToCart').click(function (e) {
+        e.preventDefault()
+
+        let $this = $(this)
+
+        $this.next().removeClass('d-none')
+
+        let id = $this.attr('data-id')
+        let url = '/cart/add/' + id
+
+        $.get(url, {}, function (data) {
+          $('div.cart').html(data)
+        }).done(function () {
+          $this.parent().parent().find('div.productAdded').fadeIn()
+          $this.next().addClass('d-none')
+          setTimeout(() => {
+            $this.parent().parent().find('div.productAdded').fadeOut()
+          }, 1300)
+        })
+      })
+    </script>
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:42.162 [DEBUG] i.g.c.a.Pause - Pausing for 2000ms
+15:13:44.165 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_8:GET_http://demostore.gatling.io/cart/add/26 uri=http://demostore.gatling.io/cart/add/26: scenario=DemoStore, userId=1
+15:13:44.165 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /cart/add/26 HTTP/1.1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: */*
+X-Requested-With: XMLHttpRequest
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/product/perfect-pink
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:44.446 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:44 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:44.446 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 259, cap: 259/259, unwrapped: PooledUnsafeDirectByteBuf(ridx: 729, widx: 734, cap: 32768)), decoderResult: success)'
+15:13:44.446 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:44.447 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_8:GET_http://demostore.gatling.io/cart/add/26: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/product/perfect-pink, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/cart/add/26
+headers:
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: */*
+	X-Requested-With: XMLHttpRequest
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/product/perfect-pink
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:44 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<p>You have <span>2</span> items in your cart.</p>
+<p>
+  Total
+  <span
+  >$44.98</span>
+  items in your cart.
+</p>
+<p>
+  <a href="/cart/view" class="btn btn-success">View cart</a>
+  <a href="/cart/clear" class="btn btn-danger float-right">Clear cart</a>
+</p>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:44.448 [DEBUG] i.g.c.a.Pause - Pausing for 2000ms
+15:13:46.452 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_9:GET_http://demostore.gatling.io/cart/view uri=http://demostore.gatling.io/cart/view: scenario=DemoStore, userId=1
+15:13:46.453 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /cart/view HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/product/perfect-pink
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:47.523 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 302 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:46 GMT
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Location: http://demostore.gatling.io/login
+content-length: 0'
+15:13:47.524 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:47.528 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_9:GET_http://demostore.gatling.io/cart/view: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/product/perfect-pink, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/cart/view
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/product/perfect-pink
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	302 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:46 GMT
+	Connection: keep-alive
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Location: http://demostore.gatling.io/login
+	content-length: 0
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:47.528 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_9:GET_http://demostore.gatling.io/cart/view uri=http://demostore.gatling.io/login: scenario=DemoStore, userId=1
+15:13:47.528 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: UnpooledByteBufAllocator$InstrumentedUnpooledUnsafeHeapByteBuf(ridx: 0, widx: 0, cap: 0))
+GET /login HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/product/perfect-pink
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io, content=null}
+15:13:47.806 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:47 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Language: en-GB'
+15:13:47.806 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 3688, cap: 3688/3688, unwrapped: PooledUnsafeDirectByteBuf(ridx: 4158, widx: 5228, cap: 16384)), decoderResult: success)'
+15:13:47.806 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 1058, cap: 1058/1058, unwrapped: PooledUnsafeDirectByteBuf(ridx: 5223, widx: 5228, cap: 16384)), decoderResult: success)'
+15:13:47.806 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:47.807 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_9:GET_http://demostore.gatling.io/cart/view Redirect 1: OK 
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/login, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+GET http://demostore.gatling.io/login
+headers:
+	Upgrade-Insecure-Requests: 1
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/product/perfect-pink
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+=========================
+HTTP response:
+status:
+	200 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:47 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta id="_csrf" name="_csrf" content="fae02617-ffc2-4162-b233-daa4677d36c9" />
+  <meta
+    id="_csrf_header"
+    name="_csrf_header"
+    content="X-CSRF-TOKEN"
+  />
+
+  <title>Gatling Demo-Store</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+  <body>
+    <nav
+  class="navbar navbar-expand-md navbar-dark bg-dark"
+>
+  <a class="navbar-brand" href="/">Gatling Demo-Store</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/about-us"
+        >About us</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/contact"
+        >Contact</a>
+      </li>
+      <li
+        class="nav-item active"
+      >
+        <a
+          class="nav-link"
+          href="/rest-api"
+        >API</a>
+      </li>
+    </ul>
+
+    <ul class="float-right navbar-nav">
+      <li class="nav-item active">
+        <a href="/register" class="nav-link">Register</a>
+      </li>
+      <li class="nav-item active">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+    </ul>
+
+    
+  </div>
+</nav>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-3">
+  <h3 class="display-4">Categories</h3>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/category/all" class="nav-link">All Products</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-him"
+      >For Him</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/for-her"
+      >For Her</a>
+    </li>
+    <li class="list-group-item">
+      <a
+        class="nav-link"
+        href="/category/unisex"
+      >Unisex</a>
+    </li>
+  </ul>
+
+  <div
+  class="bg-dark text-white p-3 mt-3"
+>
+  <div class="cart cartActive">
+    <p>You have <span>2</span> items in your cart.</p>
+    <p>
+      Total
+      <span
+      >$44.98</span>
+      items in your cart.
+    </p>
+    <p>
+      <a href="/cart/view" class="btn btn-success">View cart</a>
+      <a href="/cart/clear" class="btn btn-danger float-right">Clear cart</a>
+    </p>
+  </div>
+  
+</div>
+
+</div>
+
+        <div class="col"></div>
+        <div class="col-6 text-center">
+          <h3 class="display-4">Login</h3>
+
+          
+
+          <p>You can login with the user admin (password <code>admin</code>) or users john, user1, user2 and user3 (password <code>pass</code>)</p>
+
+          <form method="post" action="/login"><input type="hidden" name="_csrf" value="fae02617-ffc2-4162-b233-daa4677d36c9"/>
+            <div class="form-group">
+              <label for="">Username:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                id="username"
+                placeholder="Username"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <button class="btn btn-danger mb-5">Login</button>
+
+            <p>Click <a href="/register">here</a> to register.</p>
+          </form>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <footer class="container">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+  <script src="/js/app.js"></script>
+</footer>
+
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:47.809 [DEBUG] i.g.c.a.Pause - Pausing for 7000ms
+15:13:54.815 [DEBUG] i.g.h.e.t.HttpTxExecutor - Sending request=DemoStore_10:POST_http://demostore.gatling.io/login uri=http://demostore.gatling.io/login: scenario=DemoStore, userId=1
+15:13:54.816 [DEBUG] i.g.h.c.i.HttpAppHandler - Write request WritableRequest{request=DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: PooledUnsafeDirectByteBuf(ridx: 0, widx: 71, cap: 71))
+POST /login HTTP/1.1
+Upgrade-Insecure-Requests: 1
+Origin: http://demostore.gatling.io
+Cache-Control: no-cache
+accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+accept-encoding: gzip, deflate
+Pragma: no-cache
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+referer: http://demostore.gatling.io/login
+cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+host: demostore.gatling.io
+content-type: application/x-www-form-urlencoded
+content-length: 71, content=null}
+15:13:56.189 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 405 
+Server: nginx/1.20.0
+Date: Thu, 17 Feb 2022 09:43:55 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Allow: GET
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Language: en-GB'
+15:13:56.189 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='DefaultHttpContent(data: PooledSlicedByteBuf(ridx: 0, widx: 170, cap: 170/170, unwrapped: PooledUnsafeDirectByteBuf(ridx: 651, widx: 656, cap: 16384)), decoderResult: success)'
+15:13:56.189 [DEBUG] i.g.h.c.i.HttpAppHandler - Read msg='EmptyLastHttpContent'
+15:13:56.191 [DEBUG] i.g.h.e.r.DefaultStatsProcessor - Request 'DemoStore_10:POST_http://demostore.gatling.io/login' failed for user 1: status.find.in(200,201,202,203,204,205,206,207,208,209,304), found 405
+15:13:56.192 [TRACE] i.g.h.e.r.DefaultStatsProcessor - 
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+Request:
+DemoStore_10:POST_http://demostore.gatling.io/login: KO status.find.in(200,201,202,203,204,205,206,207,208,209,304), found 405
+=========================
+Session:
+Session(DemoStore,1,HashMap(gatling.http.cache.baseUrl -> http://demostore.gatling.io, gatling.http.cache.dns -> io.gatling.http.resolver.ShufflingNameResolver@196fdef7, gatling.http.ssl.sslContexts -> io.gatling.http.util.SslContexts@1883212e, gatling.http.referer -> http://demostore.gatling.io/login, gatling.http.cookies -> CookieJar(Map(CookieKey(jsessionid,demostore.gatling.io,/) -> StoredCookie(JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly,true,false,1645090985050)))),KO,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda$369/1469907228@6cb7dfcb,io.netty.channel.nio.NioEventLoop@9ebe38b)
+=========================
+HTTP request:
+POST http://demostore.gatling.io/login
+headers:
+	Upgrade-Insecure-Requests: 1
+	Origin: http://demostore.gatling.io
+	Cache-Control: no-cache
+	accept-language: en-GB,en;q=0.9,en-US;q=0.8,mr;q=0.7,hi;q=0.6
+	accept-encoding: gzip, deflate
+	Pragma: no-cache
+	accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+	user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+	referer: http://demostore.gatling.io/login
+	cookie: JSESSIONID=5846058FEA7403125DC963055BB24246
+	host: demostore.gatling.io
+	content-type: application/x-www-form-urlencoded
+	content-length: 71
+cookies:
+	JSESSIONID=5846058FEA7403125DC963055BB24246, path=/, HTTPOnly
+body:FormUrlEncodedRequestBody{contentType='application/x-www-form-urlencoded', charset=UTF-8, content=_csrf=dd9d14d8-300b-4b14-babd-df4223db30e6&username=user1&password=pass}
+=========================
+HTTP response:
+status:
+	405 
+headers:
+	Server: nginx/1.20.0
+	Date: Thu, 17 Feb 2022 09:43:55 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	Allow: GET
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 1; mode=block
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	X-Frame-Options: DENY
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	Content-Language: en-GB
+
+body:
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Something went wrong!</h1>
+    <h2>This isn't the page your were expecting....</h2>
+    <a href="/">Go Home</a>
+  </body>
+</html>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<
+15:13:56.192 [DEBUG] i.g.c.a.Exit - End user #1
+15:13:56.195 [DEBUG] i.g.c.c.i.Injector - End user #DemoStore
+15:13:56.195 [INFO ] i.g.c.c.i.Injector - All users of scenario DemoStore are stopped
+15:13:56.195 [INFO ] i.g.c.c.i.Injector - Stopping
+15:13:56.196 [INFO ] i.g.c.c.Controller - Injector has stopped, initiating graceful stop
+15:13:56.203 [DEBUG] i.g.c.c.Controller - StatsEngine was stopped
+15:13:56.204 [TRACE] i.g.app.Runner - After hooks executed
+15:13:56.205 [DEBUG] i.n.b.PoolThreadCache - Freed 18 thread-local buffer(s) from thread: gatling-1-1
+15:13:56.205 [DEBUG] i.n.b.PoolThreadCache - Freed 13 thread-local buffer(s) from thread: gatling-1-2
+15:13:56.261 [INFO ] i.g.c.s.LogFileReader - Collected List(/Users/kzanjad/Documents/Training/SapientTraining/gatling-maven-plugin-demo-main/target/gatling/demostore-20220217094300635/simulation.log) from demostore-20220217094300635
+15:13:56.271 [INFO ] i.g.c.s.LogFileReader - First pass
+15:13:56.277 [INFO ] i.g.c.s.LogFileReader - First pass done: read 15 lines
+15:13:56.285 [INFO ] i.g.c.s.LogFileReader - Second pass
+15:13:56.307 [INFO ] i.g.c.s.LogFileReader - Second pass: read 15 lines
