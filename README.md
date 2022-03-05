@@ -32,3 +32,39 @@ or simply:
     mvn gatling:test -Dgatling.simulationClass=session2.DemoStore
     
     
+
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo.BlazeDemoDonotShowResourcesInReport
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo.BlazeDemoShowResourcesInReport
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo.BlazeDemoGroupShowResourcesInReport
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo.BlazeDemoOneLoginLogoutMultipleOperation
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo.
+JsonResponseSaveKEYValue
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo.TryMaxException
+
+
+
+ mvn gatling:test -Dgatling.simulationClass=blazedemo4.BlazeDemo6
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.RegSimAtOnceUsers
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.RegSimConstantUsersPerSec
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.RegSimConstantUsersPerSecRandomized
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.RegSimrampUsersDuring
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.RegSimRampUsersPerSecRate1Rate2
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.ClosedModel
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.ClosedModelIncrementConcurrenUserseachLevelLasting
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.ClosedModelrampConcurrentUsersFromToDuring
+
+mvn gatling:test -Dgatling.simulationClass=blazedemo4.ClosedModelRampUprampConcurrentUsersFromToDuringAndRampDown
